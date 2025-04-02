@@ -1,39 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
 
-/* Your CSS Code here. */<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accessible Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
 
-    <h1 role="heading">My Portfolio</h1>
+nav {
+    background-color: #444;
+    padding: 10px;
+}
 
-    <nav role="navigation">
-        <ul role="list">
-            <li role="listitem"><a href="#">Home</a></li>
-            <li role="listitem"><a href="#">About</a></li>
-            <li role="listitem"><a href="#">Projects</a></li>
-            <li role="listitem"><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Make the navigation horizontal */
+    justify-content: center; /* Center the links */
+}
 
-    <img role="img" src="placeholder-image.jpg" alt="A placeholder image for my portfolio">
+nav li {
+    margin: 0 15px;
+}
 
-    <section>
-        <p>Welcome to my portfolio! I am a web developer with a passion for creating accessible and user-friendly websites.</p>
-    </section>
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
 
-    <section>
-        <h2>Projects</h2>
-        <ul role="list">
-            <li role="listitem">Project 1: Description of project 1.</li>
-            <li role="listitem">Project 2: Description of project 2.</li>
-            <li role="listitem">Project 3: Description of project 3.</li>
-        </ul>
-    </section>
+nav a:hover {
+    background-color: #666;
+}
 
-</body>
-</html>
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px; /* Optional: round the image corners */
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+section ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+section li {
+    margin-bottom: 5px;
+}
